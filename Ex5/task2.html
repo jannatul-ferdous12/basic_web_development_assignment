@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Page Tabs</title>
+<style>
+* {box-sizing: border-box}
+
+/* Set height of body and the document to 100% */
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial;
+}
+
+/* Style tab links */
+.tablink {
+  background-color: #555;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 200%;
+  font-weight: bold;
+  width: 50%;
+}
+
+.tablink:hover {
+  background-color: #777;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: white;
+  font-size: 150%;
+  display: none;
+  padding: 100px 20px;
+  height: 100%;
+}
+
+#Page1 {background-color: #33F7FF;}
+#Page2 {background-color: #ffa500;}
+
+</style>
+</head>
+<body>
+
+<button class="tablink" onclick="openPage('Page1', this, '#33F7FF')" id="defaultOpen">Page 1</button>
+<button class="tablink" onclick="openPage('Page2', this, '#ffa500')">Page 2</button>
+
+<div id="Page1" class="tabcontent">
+  <h3>Page 1 cotent</h3>
+  <p>This is some nice content on Page 1</p>
+</div>
+
+<div id="Page2" class="tabcontent">
+  <h3>Page 2 content</h3>
+  <p>Lorem ipsum. Some different content here</p> 
+</div>
+
+<script>
+function openPage(pageName,elmnt,color) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+  document.getElementById(pageName).style.display = "block";
+  elmnt.style.backgroundColor = color;
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+   
+</body>
+</html> 

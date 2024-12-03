@@ -1,0 +1,65 @@
+body{
+    background-color:black ;
+}
+h1{
+    color: rgb(250, 253, 253);
+    text-align: center;  
+    line-height: 50px;
+}
+div.Box1{
+    height: 50px;
+    width: 50%;
+    background-color: darkcyan;
+}
+.Box2{
+    height: 50px;
+    width: 100%;
+    background-color: Antiquewhite;
+    margin-top: 20px;
+}
+.AAAAA{
+    Color:darkslategrey;
+    line-height: 50px; 
+    margin-left: 5%;
+}
+.Box3{
+    height: 50px;
+    width: 100%;
+    background-color:darkslategrey;
+} 
+.BBBBB{
+    line-height: 50px; 
+    margin-left: 10%; 
+    color:BlanchedAlmond;
+}
+.FOO{
+    line-height: 50px; 
+    margin-left: 70%;
+    color: BlanchedAlmond; 
+}
+.Box4{
+    height: 50px;
+    width: 100%;
+    background-color:Antiquewhite; 
+    margin-top: 35px;
+}
+.CCCCC{
+    color:darkslategrey; 
+    line-height: 50px; 
+    margin-left: 5%;   
+}
+.Box5{
+    height: 50px;
+    width: 100%;
+    background-color: darkslategrey; 
+}
+.DDDDD{
+    color: BlanchedAlmond;
+    line-height: 50px; 
+    margin-left: 10%;
+}
+.BAR{
+    color: BlanchedAlmond;
+    line-height: 50px; 
+    margin-left: 60%;  
+}

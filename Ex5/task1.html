@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" >
+    <head>
+        <title> Current Time</title>
+        <style>
+            .clock {
+            font-size: 300%; /* Font size in percents */
+            position: relative; /* Relative positioning */
+            top: 7px; /* Move from above */
+            }
+        </style>
+    </head>
+<body>
+    <script>
+        var colors = ["cadetblue", "burlywood"]
+        var currentColor = 0
+        function changeColor() {
+        --currentColor
+        if (currentColor < 0) currentColor = colors.length -1
+        for (var i = 0; i < colors.length; i++) {
+            document.getElementById("DigitalCLOCK").style.color = colors[(currentColor +i) % colors.length]
+        }
+        }
+
+        setInterval(changeColor, 1000)
+    </script>
+    <span id="DigitalCLOCK" class="clock" onload="showTime()"></span>
+      <script  src="task1.js"></script>
+      
+</body>
+</html>
